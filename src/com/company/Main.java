@@ -21,8 +21,11 @@ public static class burger{
         }
         else {
             String fraction = String.valueOf(a2);
-            int numberOf = (int) Math.pow(10, fraction.length() - 2);
-            return String.valueOf(a) + " " + String.valueOf(a2) + "/" + numberOf;
+            String zeroes ="";
+            for(int i = 0; i < fraction.length()-2; i++){
+                zeroes += "0";
+            }
+            return String.valueOf(a) + " " + String.valueOf(a2) + "/" + "1" + zeroes;
         }
     }
 }
